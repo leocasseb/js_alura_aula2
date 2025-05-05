@@ -101,6 +101,26 @@ button {
     font-family: 'Inter', sans-serif;
 }
 
+button {
+    background-color: #1875E8;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+button:hover {
+    background-color: #145bb5;
+}
+
+button:active {
+    background-color: #0f4a91;
+}
+
 .texto__paragrafo {
     font-size: 32px;
     font-weight: 400;
