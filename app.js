@@ -8,7 +8,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 exibirTextoNaTela('h1', 'Jogo do número secreto!');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 100 e tente adivinhar o número secreto!');
+exibirTextoNaTela('p', 'Escolha um número entre 1 e 1000 e tente adivinhar o número secreto!');
 
 function numeroTentativas() {
     maxTentativas = maxTentativas + parseInt(document.querySelector('.container__input').value);
@@ -57,7 +57,7 @@ function novoJogo() {
 
     numeroSecreto = gerarNumeroAleatorio();
     exibirTextoNaTela('h1', 'Jogo do número secreto!');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100 e tente adivinhar o número secreto!');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 1000 e tente adivinhar o número secreto!');
     document.querySelector('input').value = '';
     tentativas = 0;
     maxTentativas = -1;
@@ -67,5 +67,5 @@ function novoJogo() {
 };
 
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 100 + 1)
+    return parseInt(Math.random() * 1000 + 1)
 };
