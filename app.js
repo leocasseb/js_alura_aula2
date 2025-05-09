@@ -57,7 +57,7 @@ function novoJogo() {
 
     numeroSecreto = gerarNumeroAleatorio();
     exibirTextoNaTela('h1', 'Jogo do número secreto!');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10 e tente adivinhar o número secreto!');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100 e tente adivinhar o número secreto!');
     document.querySelector('input').value = '';
     tentativas = 0;
     maxTentativas = -1;
