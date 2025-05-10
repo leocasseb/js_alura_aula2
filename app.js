@@ -22,7 +22,7 @@ function numeroTentativas() {
 function verificarChute() {
     tentativas++;
     if (tentativas > maxTentativas) {
-        exibirTextoNaTela('h1', 'Você perdeu! O número secreto era ' + numeroSecreto + '!');
+        exibirTextoNaTela('h1', `Você perdeu! O número secreto era ${numeroSecreto}!`);
         exibirTextoNaTela('p', 'Tente novamente!');
         return;
     };
